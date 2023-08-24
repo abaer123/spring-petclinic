@@ -7,4 +7,4 @@ RUN set -ex \
 	&& rm -rf /usr/local/tomcat/webapps/* \
 	&& chmod a+x /usr/local/tomcat/bin/*.sh
 COPY target/pet-clinic.war /usr/local/tomcat/webapps/ROOT.war
-EXPOSE 8080
+EXPOSE 8090
