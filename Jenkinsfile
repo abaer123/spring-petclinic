@@ -2,7 +2,10 @@ import groovy.json.*
 
    
    stage('Build') {
-           sh "./mvnw package"
+      steps {
+           sh './mvn compile'
+           sh './mvn test'
+      }
    }
           
 
