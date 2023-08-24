@@ -17,6 +17,8 @@ git clone https://github.com/spring-projects/spring-petclinic.git
 cd spring-petclinic
 ./mvnw package
 java -jar target/*.jar
+
+use --port=8888 to run on port 8888 e.g. "java -jar target/*.jar --port=8888"
 ```
 
 You can then access petclinic at http://localhost:8080/
