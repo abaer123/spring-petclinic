@@ -21,13 +21,12 @@ node () {
            bat(/mvnw.cmd package/)
         }
         
-        currentBuild.result = 'BUILD IS GREAT SUCCESS'
+        currentBuild.result = 'SUCCESS.'
 
       }catch(Exception err){
-        currentBuild.result = 'BUMMER. BUILD FAILED.'
+        currentBuild.result = 'FAILED.'
       
       }
-
       
       sh "echo current build status ${currentBuild.result}"
       /*
@@ -39,7 +38,6 @@ node () {
         } */
       
       }
-
 
    stage('Deploy'){
     // deploy Pet-Clinic on port 8080
