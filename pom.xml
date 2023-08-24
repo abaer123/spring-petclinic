@@ -12,6 +12,19 @@
   </parent>
   <name>petclinic</name>
 
+<!--   <!-- Add in distribution management for Artifactory -->
+    <distributionManagement>
+       <snapshotRepository>
+    <id>artifactory</id>
+    <url>http://artifactory-url/repository/maven-snapshots/</url>
+    </snapshotRepository>
+     <repository>
+    <id>artifactory</id>
+    <url>http://artifactory-url/repository/maven-releases/</url>
+    </repository>
+    </distributionManagement> -->
+
+  
   <properties>
 
     <!-- Generic properties -->
