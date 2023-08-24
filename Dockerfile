@@ -6,5 +6,5 @@ ENV ADMIN_PASSWORD="jigsawroxx"
 RUN set -ex \
 	&& rm -rf /usr/local/tomcat/webapps/* \
 	&& chmod a+x /usr/local/tomcat/bin/*.sh
-COPY target/pet-clinic.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/spring-petclinic.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8090
