@@ -36,7 +36,7 @@
 
   </properties>
 
-  
+
   <dependencies>
     <!-- Spring and Spring Boot dependencies -->
     <dependency>
@@ -156,6 +156,14 @@
 
   <build>
     <plugins>
+    
+    <plugin>
+      <groupId>com.lewisd</groupId>
+      <artifactId>lint-maven-plugin</artifactId>
+      <version>0.0.11</version>
+     </plugin>
+    
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
